@@ -100,7 +100,6 @@ nav {
 
 nav ul li {
 	width: 16%;
-
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 13px;
@@ -294,7 +293,7 @@ footer {
 
 @media only screen and (max-width: 750px) {
 	#title {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-evenly;
 		height: 800px;
@@ -324,6 +323,21 @@ footer {
 	#content img {
 		width: 100%;
 		
+	}
+
+	.services-header-content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#service-info-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#contact {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 }
