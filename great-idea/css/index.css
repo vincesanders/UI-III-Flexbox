@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -50,7 +50,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid red;
 }
 
 html, body {
@@ -95,7 +94,7 @@ nav {
 	text-align: center;
 }
 
-li {
+nav ul li {
 	width: 16%;
 
 	text-align: center;
@@ -116,11 +115,6 @@ a:hover {
 	color: steelblue;
 	font-weight: bold;
 }
-
-/* li:hover >a{
-	color: steelblue;
-	font-weight: bold;
-} */
 
 #title {
 	display: flex;
@@ -215,13 +209,15 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
-	margin: 30px 0;
-	height: 680px;
+	padding: 40px 0;
+	height: 750px;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .card {
 	width: 48%;
-	padding: 15px;
+	padding: 20px;
 	background: white;
 	border: 1px solid black;
 	background: 	#f2f2f2;
@@ -236,4 +232,30 @@ footer {
 	border-radius: 5px;
 	font-size: 11px;
 	background: white;
+}
+
+#service-info-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+}
+
+.service-info {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+
+.services-info-img {
+	width: 48%;
+}
+
+.services-info-list li {
+	list-style-type: disc; 
+	margin-bottom: 20px;
+}
+
+.services-info-list {
+	padding-left: 20px;
+	margin-top: 20px;
 }
