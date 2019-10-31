@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +49,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid red;
 }
 
 html, body {
@@ -67,27 +68,31 @@ h1, h2, h3, h4, h5 {
 
 #container {
 	width: 900px;
-	margin: 20px auto;
+	margin: 0 auto;
 	font-family: "Montserrat", "Avenir";
 }
 
 #top-header {
+	display: flex;
+	justify-content: space-between;
 	width: 900px;
 	background: steelblue;
-	position: fixed;
 	top: 0;
-	width: 100:
-}git
+	width: 100;
+	position: fixed;
+}
 
 .logo {
-	width: 23%;
+	width: 20%;
 	float: right;
 	margin-right: 10px;
 }
 
-ul {
-	width: 650px;
-	margin-left: 10px;
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 
 li {
@@ -103,33 +108,44 @@ a {
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 16%;
 }
 
-li:hover {
+a:hover {
 	background: white;
-}
-
-li:hover >a{
 	color: steelblue;
 	font-weight: bold;
 }
 
+/* li:hover >a{
+	color: steelblue;
+	font-weight: bold;
+} */
+
 #title {
+	display: flex;
 	height: 400px;
 	text-align: center;
 	margin: 60px 0;
+	justify-content: space-between;
 }
 
 #title-cta {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	vertical-align: top;
+	justify-content: center;
+	align-items: center;
 	width: 50%;
 }
 
+#title-cta img {
+	width: 50%;
+	
+}
+
 #title-header {
-	font-size: 72px;
+	font-size: 84px;
 	text-align: center;
 }
 
@@ -146,12 +162,8 @@ li:hover >a{
 	color: white;
 }
 
-#content-row-1 .content-column {
-	width: 49.7%;
-}
-
-#content-row-3 .content-column {
-	width: 33%;
+.content-row {
+	display: flex;
 }
 
 .content-column {
@@ -167,6 +179,8 @@ li:hover >a{
 #content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: column;
 }
 
 #contact {
@@ -180,4 +194,46 @@ address p:nth-child(3) {
 footer {
 	margin: 50px 0;
 	text-align: center;
+}
+
+/* ###### Code for the services page starts here. ######*/
+
+.services-header-content {
+	margin: 20px 0;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-header-content h1 {
+	font-size: 28px;
+}
+
+.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: 30px 0;
+	height: 680px;
+}
+
+.card {
+	width: 48%;
+	padding: 15px;
+	background: white;
+	border: 1px solid black;
+	background: 	#f2f2f2;
+}
+
+.card button {
+	margin-top: 15px;
+	width: 150px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 11px;
+	background: white;
 }
